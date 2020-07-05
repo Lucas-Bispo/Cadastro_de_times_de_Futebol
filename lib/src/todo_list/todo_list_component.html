@@ -1,0 +1,47 @@
+<!-- Components info: https://angulardart.dev/components -->
+<div>
+  <h1>Nome</h1>
+  <material-input label="Nome do time"
+                  autoFocus floatingLabel style="width:80%"
+                  [(ngModel)]="newTodo"
+                  (keyup.enter)="add()">
+  </material-input>
+  <h2>Estado</h2>
+  <material-input label="Nome do estado"
+                  autoFocus floatingLeft style="width:20%"
+                  [(ngModel)]="newTodoo"
+                  (keyup.enter)="add()">
+  </material-input>
+  <h3>Ano de fundação</h3>
+  <material-input label="Ano"
+                  autoFocus floatingRight style="width:20%"
+                  [(ngModel)]="newTodooo"
+                  (keyup.enter)="add()">
+  </material-input>
+
+  <material-fab mini raised
+                (trigger)="add()"
+                [disabled]="newTodooo.isEmpty">
+    <material-icon icon="add"></material-icon>
+  </material-fab>
+</div>
+
+<p *ngIf="items.isEmpty">
+  Informe o time!
+</p>
+
+<div *ngIf="items.isNotEmpty">
+  <ul>
+    <h1>Time</h1> 
+    <h2>estado</h2>
+    <h3>ano</h3>
+      <li *ngFor="let item of items; let i=index">
+        <material-checkbox #done materialTooltip="Mark item as done">
+        </material-checkbox>
+        <span [class.done]="done.checked">{{item}}</span>
+        <material-fab mini (trigger)="remove(i)">
+          <material-icon icon="delete"></material-icon>
+        </material-fab>
+      </li>
+  </ul>
+</div>

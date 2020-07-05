@@ -1,0 +1,6 @@
+:host {
+    /* This is equivalent of the 'body' selector of a page. */
+}
+h1{
+    color: rgb(145, 145, 145);
+}
