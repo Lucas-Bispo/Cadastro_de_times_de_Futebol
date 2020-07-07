@@ -1,25 +1,25 @@
 <!-- Components info: https://angulardart.dev/components -->
 <div>
   <h1>Nome</h1>
-  <material-input label="Nome do time"
+  <material-input label="Nome do time" id="No"
                   autoFocus floatingLabel style="width:80%"
                   [(ngModel)]="newTodo"
                   (keyup.enter)="add()">
   </material-input>
   <h2>Estado</h2>
-  <material-input label="Nome do estado"
+  <material-input label="Nome do estado" id="Es"
                   autoFocus floatingLeft style="width:20%"
                   [(ngModel)]="newTodoo"
                   (keyup.enter)="add()">
   </material-input>
   <h3>Ano de fundação</h3>
-  <material-input label="Ano"
+  <material-input label="Ano" id="An"
                   autoFocus floatingRight style="width:20%"
                   [(ngModel)]="newTodooo"
                   (keyup.enter)="add()">
   </material-input>
 
-  <material-fab mini raised
+  <material-fab mini raised id="Bu"
                 (trigger)="add()"
                 [disabled]="newTodooo.isEmpty">
     <material-icon icon="add"></material-icon>
