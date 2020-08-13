@@ -5,10 +5,10 @@ import 'src/todo_list/todo_list_component.dart';
 // AngularDart info: https://angulardart.dev
 // Components info: https://angulardart.dev/components
 
-@Component(
+@Component( //meta dados
   selector: 'my-app',
-  styleUrls: ['app_component.css'],
-  templateUrl: 'app_component.html',
+  styleUrls: ['app_component.css'],//diz onde está o css
+  templateUrl: 'app_component.html',//template
   directives: [TodoListComponent],
 )
 class AppComponent {
