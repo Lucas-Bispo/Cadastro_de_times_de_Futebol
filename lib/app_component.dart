@@ -14,3 +14,5 @@ import 'src/todo_list/todo_list_component.dart';
 class AppComponent {
   // Nothing here yet. All logic is in TodoListComponent.
 }
+
+
