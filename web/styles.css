@@ -1,12 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Material+Icons);
-
-body {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 5vw;
+.container-small{
+  margin: auto;
+  max-width: 50%;
 }
 
-* {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+.container-medium{
+  margin: auto;
+  max-width: 70%;
+}
+
+.table td.icon{
+  border: none;
+}
+
+.table td.icon a i{
+  text-decoration: none;
+  color: black;
+  display: inline;
 }
